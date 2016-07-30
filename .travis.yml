@@ -1,22 +1,23 @@
----
 language: node_js
 node_js:
-  - "4"
-
+- '4'
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - npm install phantomjs-prebuilt
-
+- npm config set spin false
+- npm install -g bower
+- npm install phantomjs-prebuilt
 install:
-  - npm install
-  - bower install
-
+- npm install
+- bower install
 script:
-  - npm test
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: EbxNpVkGCy9VLDTRhPf5oiXbbynLr7q1OGmNEfMpAOq2Vgr5AYAI3xoeVS9MeXNIBGSaarbBlHblHY6hmAHXKOU+QIrpWsGdG8OK6OT9/geNWkFIn046SHQp8aJ3PM2ZzcJIK24Iz1Kmp0nnjaLmS3OeS9XHT4KnuushPnIjmCPN37LycgB6K0UBtQDJGNlLrfIMTN9R0h/2jpJGeIRDzCHxPurertMkfJ1vnQqQICMfG5IGKFgJ5sYvihkgbhokBebi20bqCJDxod6aS+FqTrUKqR7dM1jnz420wjme5r2Z4Hn9mmtRUqkY2BIwQvm+lqNYd+cK+1++AW9yUI3RKWV3HVtifMrPe46EnCCUemFrAQxYCL2HGoMEC+qvOT0Lgz9nuJ0e3SfLP7ZZ/A+lbNX0hEn+DX0Vk5JHbbk3BsNEZLTpaFd8gvByvQzsQhWdQz4x9HJ2A/5DZnMzfcUnywKQGfK0F7WlSwq/kecIatKzq3VCPuhyKeBZqo2QoabzNY3oiSieIejY69Fqc23K052fXY/eftGojAbqA7UmfZrHmRpEQ8yHHj+eFnTPvvlRjHmFUZY4euw0DgFPfhe13Rfwy9s+w7olenocw7HurCJmjJv2/Oc7bPiynVQRt8i4CMBvPfXORPR+dsEGrJ6yOfYzTeTDFVEgPrO1IflTvkk=
+  app: calm-sands-46032
+  on:
+    repo: snewcomer/chat-phoenix
