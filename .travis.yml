@@ -2,13 +2,13 @@ language: node_js
 node_js:
 - '4'
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+    - g++-4.8
 sudo: false
 cache:
   directories:
@@ -25,7 +25,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: EbxNpVkGCy9VLDTRhPf5oiXbbynLr7q1OGmNEfMpAOq2Vgr5AYAI3xoeVS9MeXNIBGSaarbBlHblHY6hmAHXKOU+QIrpWsGdG8OK6OT9/geNWkFIn046SHQp8aJ3PM2ZzcJIK24Iz1Kmp0nnjaLmS3OeS9XHT4KnuushPnIjmCPN37LycgB6K0UBtQDJGNlLrfIMTN9R0h/2jpJGeIRDzCHxPurertMkfJ1vnQqQICMfG5IGKFgJ5sYvihkgbhokBebi20bqCJDxod6aS+FqTrUKqR7dM1jnz420wjme5r2Z4Hn9mmtRUqkY2BIwQvm+lqNYd+cK+1++AW9yUI3RKWV3HVtifMrPe46EnCCUemFrAQxYCL2HGoMEC+qvOT0Lgz9nuJ0e3SfLP7ZZ/A+lbNX0hEn+DX0Vk5JHbbk3BsNEZLTpaFd8gvByvQzsQhWdQz4x9HJ2A/5DZnMzfcUnywKQGfK0F7WlSwq/kecIatKzq3VCPuhyKeBZqo2QoabzNY3oiSieIejY69Fqc23K052fXY/eftGojAbqA7UmfZrHmRpEQ8yHHj+eFnTPvvlRjHmFUZY4euw0DgFPfhe13Rfwy9s+w7olenocw7HurCJmjJv2/Oc7bPiynVQRt8i4CMBvPfXORPR+dsEGrJ6yOfYzTeTDFVEgPrO1IflTvkk=
+    secure: CmOqzZvIaMPSGkpj66gNbtRznOzsgkmEi57dmebsBJWWMYO6kWjTUwaotaH+qVrMG2zdI3AcglSffvoKTvROyD6AFTub2MxZa29Y0ry3Qf7k51QxMbgbCadAkp20KEQNeu/gP/w44VSl+hFcCOnYwG5MwgxoBxKV1ffqpGH8xVVyIkmd2v/nZQTW7TMMmgHCjP3dJAk/lYIrawRAdf8M3KVUp3Ni6Ou28cYXdsm8zU1C7391Uk5e25i8Qw1F43HyuybcaYa7Kj3T+p0kmxQbP0DRSEyAFlwRdKJD6nycZRauVlM+qS6ufVrl29ZlBYGtclkKsJJJMCxN8VqfM7i9wL8YUmgzqAKdbqrDbZGabz9KoiZqZVCtT32PSJMJKKIXVpAAKtHN4lsfKMKQ9XvzHXBV11WiocJAnrFEchI/pTO7P98Sk33XTsuwjlVhcBKhCRlF9qlAPSFAX1AS73+YYHaTRmHU2i3aSq6D/WY73fIZ6TJbNtGu4KEIUJfjABwsD1//3/gl96DSBT0QmeL81y2VHOIKN0MPmHx/q+LH/VWCk4tteody8iokSRo3Y6x+Pirp09MFcbNevMY0zyX+Pt//CZA8n2CFM31BbviQIeUYHoZGwojVgKeyxc3C6Gaw73EleNMKZp03I5GM6asYyJGiiCoUahsYkPpHJQS09nw=
   app: calm-sands-46032
   on:
     repo: snewcomer/chat-phoenix
