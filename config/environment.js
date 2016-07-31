@@ -46,7 +46,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.DS.host = 'https://calm-sands-46032.herokuapp.com';
+    ENV.DS.host = 'https://boiling-springs-53376.herokuapp.com';
   }
 
   return ENV;
