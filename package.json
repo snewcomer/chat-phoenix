@@ -26,6 +26,7 @@
     "ember-cli-babel": "^5.1.6",
     "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-fastboot": "1.0.0-beta.7",
+    "ember-cli-flash": "1.3.16",
     "ember-cli-htmlbars": "^1.0.3",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.4.0",
@@ -38,8 +39,10 @@
     "ember-data": "^2.6.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
+    "ember-network": "0.3.0",
     "ember-resolver": "^2.0.3",
     "ember-route-action-helper": "0.3.3",
+    "ember-simple-auth": "git://github.com/simplabs/ember-simple-auth.git#2d49133ec8543ae53af713d7551072ba49f65ce7",
     "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
   }

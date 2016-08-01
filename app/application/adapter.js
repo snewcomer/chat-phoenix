@@ -4,6 +4,7 @@ import config from '../config/environment';
 export default DS.JSONAPIAdapter.extend({
   host: config.DS.host,
   namespace: config.DS.namespace,
+  authorizer: 'authorizer:oauth2',
   urlForCreateRecord(modelName) {
     switch(modelName) {
       case 'user':
